@@ -1,0 +1,890 @@
+create raft 0
+readPersist(): 0
+create raft 1
+readPersist(): 0
+create raft 2
+readPersist(): 0
+Test (2A): initial election ...
+2 make a vote of 1
+1 voteFor 2 args term:0 index:0  my term:0 index:0
+0 voteFor 2 args term:0 index:0  my term:0 index:0
+2'vote get 3 tikets of term:1 old:0 response:3
+2 become the leader of term:3
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:1 term:4 
+2 commited index: 1 count:2
+1 agree 2 (0)append the index:1 term:4 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 1 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is leader of 4 logLen:2 term:4 commited:1 apply:1
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 1 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is leader of 4 logLen:2 term:4 commited:1 apply:1
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 1 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is leader of 4 logLen:2 term:4 commited:1 apply:1
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 1 is 0 of 4 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is leader of 4 logLen:2 term:4 commited:1 apply:1
+  ... Passed --   3.0  3  106   38376    0
+raft 0 was killed
+raft 1 was killed
+raft 2 was killed
+create raft 0
+readPersist(): 0
+create raft 1
+readPersist(): 0
+create raft 2
+readPersist(): 0
+Test (2A): election after network failure ...
+1 make a vote of 1
+2 voteFor 1 args term:0 index:0  my term:0 index:0
+0 voteFor 1 args term:0 index:0  my term:0 index:0
+1'vote get 3 tikets of term:1 old:0 response:3
+1 become the leader of term:3
+2 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:1 term:4 
+1 commited index: 1 count:2
+0 agree 1 (0)append the index:0 term:0 
+0 agree 1 (0)append the index:1 term:4 
+0 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:0 term:0 
+0 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:0 term:0 
+0 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:0 term:0 
+0 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:0 term:0 
+0 agree 1 (0)append the index:0 term:0 
+0 agree 1 (0)append the index:0 term:0 
+2 agree 1 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 4 the leader=1 logLen:2 term:4 commited:1 apply:1
+Get state raft 1 is leader of 4 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is 0 of 4 the leader=1 logLen:2 term:4 commited:1 apply:1
+2 make a vote of 5
+0 voteFor 2 args term:4 index:1  my term:4 index:1
+2'vote get 2 tikets of term:5 old:0 response:2
+2 become the leader of term:7
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:2 term:8 
+2 commited index: 2 count:2
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 8 the leader=2 logLen:3 term:8 commited:2 apply:2
+Get state raft 2 is leader of 8 logLen:3 term:8 commited:2 apply:2
+1 agree 2 (2)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 8 the leader=2 logLen:3 term:8 commited:2 apply:2
+Get state raft 1 is 0 of 8 the leader=2 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is leader of 8 logLen:3 term:8 commited:2 apply:2
+0 make a vote of 9
+1 make a vote of 9
+0'vote get 1 tikets of term:9 old:0 response:1
+1'vote get 1 tikets of term:9 old:0 response:1
+0 make a vote of 10
+1 make a vote of 10
+0'vote get 1 tikets of term:10 old:0 response:1
+1'vote get 1 tikets of term:10 old:0 response:1
+0 make a vote of 11
+1 make a vote of 11
+0'vote get 1 tikets of term:11 old:0 response:1
+1'vote get 1 tikets of term:11 old:0 response:1
+0 make a vote of 12
+1 make a vote of 12
+0'vote get 1 tikets of term:12 old:0 response:1
+0 make a vote of 13
+1'vote get 1 tikets of term:12 old:0 response:1
+1 make a vote of 13
+0'vote get 1 tikets of term:13 old:0 response:1
+1'vote get 1 tikets of term:13 old:0 response:1
+0 make a vote of 14
+1 make a vote of 14
+0'vote get 1 tikets of term:14 old:0 response:1
+Get state raft 1 is 1 of 14 the leader=-1 logLen:2 term:4 commited:1 apply:1
+1'vote get 1 tikets of term:14 old:0 response:1
+0 make a vote of 15
+1 voteFor 0 args term:8 index:2  my term:4 index:1
+0'vote get 2 tikets of term:15 old:0 response:2
+0 become the leader of term:17
+1 agree 0 (0)append the index:2 term:8 
+1 agree 0 (0)append the index:3 term:18 
+0 commited index: 3 count:2
+1 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+Get state raft 0 is leader of 18 logLen:4 term:18 commited:3 apply:3
+Get state raft 1 is 0 of 18 the leader=0 logLen:4 term:18 commited:3 apply:3
+2 agree 0 (2)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+2 agree 0 (0)append the index:0 term:0 
+1 agree 0 (0)append the index:0 term:0 
+Get state raft 0 is leader of 18 logLen:4 term:18 commited:3 apply:3
+Get state raft 1 is 0 of 18 the leader=0 logLen:4 term:18 commited:3 apply:3
+Get state raft 2 is 0 of 18 the leader=0 logLen:3 term:8 commited:2 apply:2
+  ... Passed --   4.6  3  217   62154    0
+raft 0 was killed
+raft 1 was killed
+raft 2 was killed
+create raft 0
+readPersist(): 0
+create raft 1
+readPersist(): 0
+create raft 2
+readPersist(): 0
+create raft 3
+readPersist(): 0
+create raft 4
+readPersist(): 0
+create raft 5
+readPersist(): 0
+create raft 6
+readPersist(): 0
+Test (2A): multiple elections ...
+6 make a vote of 1
+0 voteFor 6 args term:0 index:0  my term:0 index:0
+1 voteFor 6 args term:0 index:0  my term:0 index:0
+3 voteFor 6 args term:0 index:0  my term:0 index:0
+5 voteFor 6 args term:0 index:0  my term:0 index:0
+2 voteFor 6 args term:0 index:0  my term:0 index:0
+4 voteFor 6 args term:0 index:0  my term:0 index:0
+6'vote get 7 tikets of term:1 old:0 response:7
+6 become the leader of term:3
+3 agree 6 (0)append the index:1 term:4 
+0 agree 6 (0)append the index:1 term:4 
+4 agree 6 (0)append the index:1 term:4 
+1 agree 6 (0)append the index:1 term:4 
+6 commited index: 1 count:4
+5 agree 6 (0)append the index:1 term:4 
+2 agree 6 (0)append the index:1 term:4 
+0 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+0 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+0 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+0 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+0 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+0 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+3 agree 6 (0)append the index:0 term:0 
+0 agree 6 (0)append the index:0 term:0 
+4 agree 6 (0)append the index:0 term:0 
+5 agree 6 (0)append the index:0 term:0 
+1 agree 6 (0)append the index:0 term:0 
+2 agree 6 (0)append the index:0 term:0 
+Get state raft 0 is 0 of 4 the leader=6 logLen:2 term:4 commited:1 apply:1
+Get state raft 1 is 0 of 4 the leader=6 logLen:2 term:4 commited:1 apply:1
+Get state raft 2 is 0 of 4 the leader=6 logLen:2 term:4 commited:1 apply:1
+Get state raft 3 is 0 of 4 the leader=6 logLen:2 term:4 commited:1 apply:1
+Get state raft 4 is 0 of 4 the leader=6 logLen:2 term:4 commited:1 apply:1
+Get state raft 5 is 0 of 4 the leader=6 logLen:2 term:4 commited:1 apply:1
+Get state raft 6 is leader of 4 logLen:2 term:4 commited:1 apply:1
+1 make a vote of 5
+0 make a vote of 5
+5 make a vote of 5
+2 voteFor 0 args term:4 index:1  my term:4 index:1
+3 voteFor 0 args term:4 index:1  my term:4 index:1
+switch 2 refuse 5 for voteFor==0 or voteFor!=5 or args.Term:5 > rf.curTerm:5
+switch 3 refuse 5 for voteFor==0 or voteFor!=5 or args.Term:5 > rf.curTerm:5
+4 make a vote of 5
+0'vote get 3 tikets of term:5 old:0 response:4
+5'vote get 1 tikets of term:5 old:0 response:4
+2 make a vote of 6
+3 voteFor 2 args term:4 index:1  my term:4 index:1
+0 voteFor 2 args term:4 index:1  my term:4 index:1
+5 voteFor 2 args term:4 index:1  my term:4 index:1
+1'vote get 1 tikets of term:5 old:0 response:1
+4'vote get 1 tikets of term:5 old:0 response:1
+4 make a vote of 6
+3 make a vote of 7
+0 voteFor 3 args term:4 index:1  my term:4 index:1
+5 voteFor 3 args term:4 index:1  my term:4 index:1
+2 voteFor 3 args term:4 index:1  my term:4 index:1
+2'vote get 4 tikets of term:6 old:0 response:4
+2 become the leader of term:8
+0 agree 2 (0)append the index:2 term:9 
+3 agree 2 (1)append the index:2 term:9 
+5 agree 2 (0)append the index:2 term:9 
+3 agree 2 (0)append the index:0 term:0 
+5 agree 2 (0)append the index:0 term:0 
+0 agree 2 (0)append the index:0 term:0 
+2 commited index: 2 count:4
+1 make a vote of 6
+Get state raft 0 is 0 of 9 the leader=2 logLen:3 term:9 commited:1 apply:1
+Get state raft 2 is leader of 9 logLen:3 term:9 commited:2 apply:2
+Get state raft 3 is 0 of 9 the leader=2 logLen:3 term:9 commited:1 apply:1
+Get state raft 5 is 0 of 9 the leader=2 logLen:3 term:9 commited:1 apply:1
+1 agree 2 (1)append the index:0 term:0 
+3 agree 2 (0)append the index:0 term:0 
+4 agree 2 (1)append the index:0 term:0 
+6 agree 2 (0)append the index:0 term:0 
+1 agree 2 (0)append the index:0 term:0 
+3 agree 2 (0)append the index:0 term:0 
+6 agree 2 (0)append the index:0 term:0 
+4 agree 2 (0)append the index:0 term:0 
+3'vote get 4 tikets of term:7 old:0 response:4
+3 become the leader of term:9
+2 agree 3 (2)append the index:3 term:10 
+1 agree 3 (0)append the index:2 term:9 
+4 agree 3 (0)append the index:2 term:9 
+1 agree 3 (0)append the index:3 term:10 
+4 agree 3 (0)append the index:3 term:10 
+3 commited index: 3 count:4
+6 agree 3 (0)append the index:2 term:9 
+1 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:3 term:10 
+4 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+0 make a vote of 10
+1'vote get 1 tikets of term:6 old:0 response:1
+4'vote get 1 tikets of term:6 old:0 response:1
+6 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+5 make a vote of 10
+6 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+5'vote get 1 tikets of term:10 old:0 response:1
+0'vote get 1 tikets of term:10 old:0 response:1
+2 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+0 make a vote of 11
+5 make a vote of 11
+1 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+1 agree 3 (0)append the index:0 term:0 
+6 agree 3 (0)append the index:0 term:0 
+2 agree 3 (0)append the index:0 term:0 
+4 agree 3 (0)append the index:0 term:0 
+Get state raft 1 is 0 of 10 the leader=3 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 10 the leader=3 logLen:4 term:10 commited:3 apply:3
+Get state raft 3 is leader of 10 logLen:4 term:10 commited:3 apply:3
+Get state raft 4 is 0 of 10 the leader=3 logLen:4 term:10 commited:3 apply:3
+Get state raft 6 is 0 of 10 the leader=3 logLen:4 term:10 commited:3 apply:3
+0'vote get 1 tikets of term:11 old:0 response:1
+5'vote get 1 tikets of term:11 old:0 response:1
+2 make a vote of 11
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+0 make a vote of 12
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+2 refuse 0 for log[3]:&{0 12 9 2}    {{10 0 <nil>} 3 true 1 1}
+6 refuse 0 for log[3]:&{0 12 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:12 > rf.curTerm:11
+1 refuse 0 for log[3]:&{0 12 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:12 > rf.curTerm:11
+4 make a vote of 11
+0'vote get 2 tikets of term:12 old:3 response:5
+2'vote get 3 tikets of term:11 old:0 response:5
+1 make a vote of 12
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+switch 5 refuse 1 for voteFor==0 or voteFor!=1 or args.Term:12 > rf.curTerm:12
+4'vote get 1 tikets of term:11 old:0 response:1
+1'vote get 3 tikets of term:12 old:0 response:5
+5 make a vote of 13
+1 refuse 5 for log[3]:&{5 13 9 2}    {{10 0 <nil>} 3 true 1 1}
+6 refuse 5 for log[3]:&{5 13 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:13 > rf.curTerm:12
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+2 refuse 5 for log[3]:&{5 13 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:13 > rf.curTerm:12
+Get state raft 0 is 0 of 13 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 1 of 12 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 12 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 1 of 13 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 12 the leader=-1 logLen:4 term:10 commited:3 apply:3
+4 make a vote of 12
+6 make a vote of 13
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+switch 0 refuse 6 for voteFor==5 or voteFor!=6 or args.Term:13 > rf.curTerm:13
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+0 make a vote of 14
+6 refuse 0 for log[3]:&{0 14 9 2}    {{10 0 <nil>} 3 true 4 1}
+1 refuse 0 for log[3]:&{0 14 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:14 > rf.curTerm:13
+2 refuse 0 for log[3]:&{0 14 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:14 > rf.curTerm:13
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+5'vote get 2 tikets of term:13 old:3 response:5
+4'vote get 1 tikets of term:12 old:0 response:1
+6'vote get 3 tikets of term:13 old:0 response:5
+2 make a vote of 14
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+switch 5 refuse 2 for voteFor==0 or voteFor!=2 or args.Term:14 > rf.curTerm:14
+0'vote get 2 tikets of term:14 old:3 response:5
+5 make a vote of 15
+6 refuse 5 for log[3]:&{5 15 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:15 > rf.curTerm:14
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+1 refuse 5 for log[3]:&{5 15 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:15 > rf.curTerm:14
+2 refuse 5 for log[3]:&{5 15 9 2}    {{10 0 <nil>} 3 true 1 1}
+4 make a vote of 13
+1 make a vote of 15
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+switch 0 refuse 1 for voteFor==5 or voteFor!=1 or args.Term:15 > rf.curTerm:15
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+2'vote get 3 tikets of term:14 old:0 response:5
+0 make a vote of 16
+2 refuse 0 for log[3]:&{0 16 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:16 > rf.curTerm:15
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1 refuse 0 for log[3]:&{0 16 9 2}    {{10 0 <nil>} 3 true 1 1}
+6 refuse 0 for log[3]:&{0 16 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:16 > rf.curTerm:15
+5'vote get 2 tikets of term:15 old:3 response:5
+4'vote get 1 tikets of term:13 old:0 response:1
+Get state raft 0 is 1 of 16 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 1 of 15 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 15 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 0 of 16 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 15 the leader=-1 logLen:4 term:10 commited:3 apply:3
+1'vote get 3 tikets of term:15 old:0 response:5
+6 make a vote of 16
+switch 5 refuse 6 for voteFor==0 or voteFor!=6 or args.Term:16 > rf.curTerm:16
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+0'vote get 2 tikets of term:16 old:3 response:5
+5 make a vote of 17
+6 refuse 5 for log[3]:&{5 17 9 2}    {{10 0 <nil>} 3 true 4 1}
+2 refuse 5 for log[3]:&{5 17 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:17 > rf.curTerm:16
+1 refuse 5 for log[3]:&{5 17 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:17 > rf.curTerm:16
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+4 make a vote of 14
+5'vote get 2 tikets of term:17 old:3 response:5
+0 make a vote of 18
+1 refuse 0 for log[3]:2 refuse 0 for log[3]:&{0 18 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:18 > rf.curTerm:16
+&{0 18 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:18 > rf.curTerm:16
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+6 refuse 0 for log[3]:&{0 18 9 2}    {{10 0 <nil>} 3 true 4 1}
+6'vote get 3 tikets of term:16 old:0 response:5
+2 make a vote of 17
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+0'vote get 2 tikets of term:18 old:3 response:5
+2'vote get 3 tikets of term:17 old:0 response:5
+4'vote get 1 tikets of term:14 old:0 response:1
+Get state raft 0 is 1 of 18 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 0 of 17 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 1 of 18 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 0 of 18 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 17 the leader=-1 logLen:4 term:10 commited:3 apply:3
+5 make a vote of 19
+6 refuse 5 for log[3]:&{5 19 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:19 > rf.curTerm:17
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+1 refuse 5 for log[3]:&{5 19 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:19 > rf.curTerm:17
+2 refuse 5 for log[3]:&{5 19 9 2}    {{10 0 <nil>} 3 true 1 1}
+1 make a vote of 18
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+4 make a vote of 15
+5'vote get 2 tikets of term:19 old:3 response:5
+0 make a vote of 20
+6 refuse 0 for log[3]:&{0 20 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:20 > rf.curTerm:18
+2 refuse 0 for log[3]:&{0 20 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:20 > rf.curTerm:18
+1 refuse 0 for log[3]:&{0 20 9 2}    {{10 0 <nil>} 3 true 1 1}
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1'vote get 3 tikets of term:18 old:0 response:5
+6 make a vote of 19
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+4'vote get 1 tikets of term:15 old:0 response:1
+0'vote get 2 tikets of term:20 old:3 response:5
+5 make a vote of 21
+6 refuse 5 for log[3]:1 refuse 5 for log[3]:&{5 21 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:21 > rf.curTerm:19
+2 refuse 5 for log[3]:&{5 21 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:21 > rf.curTerm:19
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+&{5 21 9 2}    {{10 0 <nil>} 3 true 4 1}
+4 make a vote of 16
+6'vote get 3 tikets of term:19 old:0 response:5
+2 make a vote of 20
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+5'vote get 2 tikets of term:21 old:3 response:5
+0 make a vote of 22
+6 refuse 0 for log[3]:2 refuse 0 for log[3]:&{0 22 9 2}    {{10 0 <nil>} 3 true 1 1}
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1 refuse 0 for log[3]:&{0 22 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:22 > rf.curTerm:20
+&{0 22 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:22 > rf.curTerm:20
+Get state raft 0 is 1 of 22 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 0 of 20 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 1 of 20 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 0 of 22 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 20 the leader=-1 logLen:4 term:10 commited:3 apply:3
+4'vote get 1 tikets of term:16 old:0 response:1
+1 make a vote of 21
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+0'vote get 2 tikets of term:22 old:3 response:5
+2'vote get 3 tikets of term:20 old:0 response:5
+5 make a vote of 23
+1 refuse 5 for log[3]:&{5 23 9 2}    {{10 0 <nil>} 3 true 1 1}
+2 refuse 5 for log[3]:&{5 23 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:23 > rf.curTerm:21
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+6 refuse 5 for log[3]:&{5 23 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:23 > rf.curTerm:21
+4 make a vote of 17
+6 make a vote of 22
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+1'vote get 3 tikets of term:21 old:0 response:5
+4'vote get 1 tikets of term:17 old:0 response:1
+0 make a vote of 24
+6 refuse 0 for log[3]:&{0 24 9 2}    {{10 0 <nil>} 3 true 4 1}
+1 refuse 0 for log[3]:&{0 24 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:24 > rf.curTerm:22
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+2 refuse 0 for log[3]:&{0 24 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:24 > rf.curTerm:22
+5'vote get 2 tikets of term:23 old:3 response:5
+6'vote get 3 tikets of term:22 old:0 response:5
+1 make a vote of 23
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+5 make a vote of 25
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+1 refuse 5 for log[3]:&{5 25 9 2}    {{10 0 <nil>} 3 true 1 1}
+6 refuse 5 for log[3]:&{5 25 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:25 > rf.curTerm:23
+2 refuse 5 for log[3]:&{5 25 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:25 > rf.curTerm:23
+4 make a vote of 18
+Get state raft 0 is 0 of 25 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 1 of 23 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 23 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 1 of 25 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 23 the leader=-1 logLen:4 term:10 commited:3 apply:3
+0'vote get 2 tikets of term:24 old:3 response:5
+1'vote get 3 tikets of term:23 old:0 response:5
+2 make a vote of 24
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+5'vote get 2 tikets of term:25 old:3 response:5
+0 make a vote of 26
+2 refuse 0 for log[3]:1 refuse 0 for log[3]:&{0 26 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:26 > rf.curTerm:24
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+6 refuse 0 for log[3]:&{0 26 9 2}    {{10 0 <nil>} 3 true 4 1}
+&{0 26 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 6 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:26 > rf.curTerm:24
+4'vote get 1 tikets of term:18 old:0 response:1
+2'vote get 3 tikets of term:24 old:0 response:5
+6 make a vote of 25
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+5 make a vote of 27
+6 refuse 5 for log[3]:&{5 27 9 2}    {{10 0 <nil>} 3 true 4 1}
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+2 refuse 5 for log[3]:&{5 27 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:27 > rf.curTerm:25
+1 refuse 5 for log[3]:&{5 27 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:27 > rf.curTerm:25
+0'vote get 2 tikets of term:26 old:3 response:5
+4 make a vote of 19
+1 make a vote of 26
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+Get state raft 0 is 0 of 27 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 1 of 26 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 26 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 1 of 27 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 26 the leader=-1 logLen:4 term:10 commited:3 apply:3
+0 make a vote of 28
+2 refuse 0 for log[3]:1 refuse 0 for log[3]:&{0 28 9 2}    {{10 0 <nil>} 3 true 1 1}
+&{0 28 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:28 > rf.curTerm:26
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+6 refuse 0 for log[3]:&{0 28 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:28 > rf.curTerm:26
+5'vote get 2 tikets of term:27 old:3 response:5
+4'vote get 1 tikets of term:19 old:0 response:1
+6'vote get 3 tikets of term:25 old:0 response:5
+4 make a vote of 20
+1'vote get 3 tikets of term:26 old:0 response:5
+2 make a vote of 27
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+5 make a vote of 29
+1 refuse 5 for log[3]:6 refuse 5 for log[3]:&{5 29 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:29 > rf.curTerm:27
+2 refuse 5 for log[3]:0 voteFor 5 args term:9 index:2  my term:9 index:2
+&{5 29 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:29 > rf.curTerm:27
+&{5 29 9 2}    {{10 0 <nil>} 3 true 1 1}
+0'vote get 2 tikets of term:28 old:3 response:5
+6 make a vote of 28
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+2'vote get 3 tikets of term:27 old:0 response:5
+4'vote get 1 tikets of term:20 old:0 response:1
+5'vote get 2 tikets of term:29 old:3 response:5
+0 make a vote of 30
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1 refuse 0 for log[3]:&{0 30 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:30 > rf.curTerm:28
+6 refuse 0 for log[3]:&{0 30 9 2}    {{10 0 <nil>} 3 true 4 1}
+2 refuse 0 for log[3]:&{0 30 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:30 > rf.curTerm:28
+6'vote get 3 tikets of term:28 old:0 response:5
+4 make a vote of 21
+2 make a vote of 29
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+5 make a vote of 31
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+1 refuse 5 for log[3]:&{5 31 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:31 > rf.curTerm:29
+6 refuse 5 for log[3]:&{5 31 9 2}    {{10 0 <nil>} 3 true 4 1}
+2 refuse 5 for log[3]:&{5 31 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 6 refuse 5 for voteFor==2 or voteFor!=5 or args.Term:31 > rf.curTerm:29
+0'vote get 2 tikets of term:30 old:3 response:5
+Get state raft 0 is 0 of 31 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 0 of 29 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 1 of 29 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 1 of 31 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 29 the leader=-1 logLen:4 term:10 commited:3 apply:3
+4'vote get 1 tikets of term:21 old:0 response:1
+1 make a vote of 30
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2'vote get 3 tikets of term:29 old:0 response:5
+0 make a vote of 32
+2 refuse 0 for log[3]:&{0 32 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:32 > rf.curTerm:30
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1 refuse 0 for log[3]:&{0 32 9 2}    {{10 0 <nil>} 3 true 1 1}
+6 refuse 0 for log[3]:&{0 32 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==1 or voteFor!=0 or args.Term:32 > rf.curTerm:30
+5'vote get 2 tikets of term:31 old:3 response:5
+6 make a vote of 31
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+4 make a vote of 22
+1'vote get 3 tikets of term:30 old:0 response:5
+0'vote get 2 tikets of term:32 old:3 response:5
+5 make a vote of 33
+2 refuse 5 for log[3]:&{5 33 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:33 > rf.curTerm:31
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+6 refuse 5 for log[3]:&{5 33 9 2}    {{10 0 <nil>} 3 true 4 1}
+1 refuse 5 for log[3]:&{5 33 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:33 > rf.curTerm:31
+2 make a vote of 32
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+6'vote get 3 tikets of term:31 old:0 response:5
+5'vote get 2 tikets of term:33 old:3 response:5
+4'vote get 1 tikets of term:22 old:0 response:1
+0 make a vote of 34
+1 refuse 0 for log[3]:&{0 34 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:34 > rf.curTerm:32
+2 refuse 0 for log[3]:&{0 34 9 2}    {{10 0 <nil>} 3 true 1 1}
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+6 refuse 0 for log[3]:&{0 34 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:34 > rf.curTerm:32
+Get state raft 0 is 1 of 34 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 0 of 32 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 1 of 32 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 0 of 34 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 32 the leader=-1 logLen:4 term:10 commited:3 apply:3
+1 make a vote of 33
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2'vote get 3 tikets of term:32 old:0 response:5
+5 make a vote of 35
+6 refuse 5 for log[3]:&{5 35 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:35 > rf.curTerm:33
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+1 refuse 5 for log[3]:&{5 35 9 2}    {{10 0 <nil>} 3 true 1 1}
+2 refuse 5 for log[3]:&{5 35 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:35 > rf.curTerm:33
+4 make a vote of 23
+1'vote get 3 tikets of term:33 old:0 response:5
+0'vote get 2 tikets of term:34 old:3 response:5
+2 make a vote of 34
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+5'vote get 2 tikets of term:35 old:3 response:5
+2'vote get 3 tikets of term:34 old:0 response:5
+4'vote get 1 tikets of term:23 old:0 response:1
+0 make a vote of 36
+6 refuse 0 for log[3]:&{0 36 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:36 > rf.curTerm:34
+1 refuse 0 for log[3]:&{0 36 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:36 > rf.curTerm:34
+2 refuse 0 for log[3]:&{0 36 9 2}    {{10 0 <nil>} 3 true 1 1}
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+6 make a vote of 35
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+4 make a vote of 24
+1 make a vote of 36
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+switch 5 refuse 1 for voteFor==0 or voteFor!=1 or args.Term:36 > rf.curTerm:36
+0'vote get 2 tikets of term:36 old:3 response:5
+6'vote get 3 tikets of term:35 old:0 response:5
+Get state raft 0 is 1 of 36 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 1 of 36 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 36 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 0 of 36 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 36 the leader=-1 logLen:4 term:10 commited:3 apply:3
+5 make a vote of 37
+6 refuse 5 for log[3]:&{5 37 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:37 > rf.curTerm:36
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+2 refuse 5 for log[3]:&{5 37 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==1 or voteFor!=5 or args.Term:37 > rf.curTerm:36
+1 refuse 5 for log[3]:&{5 37 9 2}    {{10 0 <nil>} 3 true 1 1}
+1'vote get 3 tikets of term:36 old:0 response:5
+4'vote get 1 tikets of term:24 old:0 response:1
+2 make a vote of 37
+1 voteFor 2 args term:10 index:3  my term:10 index:3
+switch 0 refuse 2 for voteFor==5 or voteFor!=2 or args.Term:37 > rf.curTerm:37
+6 voteFor 2 args term:10 index:3  my term:10 index:3
+0 make a vote of 38
+6 refuse 0 for log[3]:&{0 38 9 2}    {{10 0 <nil>} 3 true 4 1}
+switch 6 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:38 > rf.curTerm:37
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1 refuse 0 for log[3]:&{0 38 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==2 or voteFor!=0 or args.Term:38 > rf.curTerm:37
+2 refuse 0 for log[3]:&{0 38 9 2}    {{10 0 <nil>} 3 true 1 1}
+5'vote get 2 tikets of term:37 old:3 response:5
+4 make a vote of 25
+2'vote get 3 tikets of term:37 old:0 response:5
+6 make a vote of 38
+1 voteFor 6 args term:10 index:3  my term:10 index:3
+2 voteFor 6 args term:10 index:3  my term:10 index:3
+switch 5 refuse 6 for voteFor==0 or voteFor!=6 or args.Term:38 > rf.curTerm:38
+0'vote get 2 tikets of term:38 old:3 response:5
+5 make a vote of 39
+1 refuse 5 for log[3]:&{5 39 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:39 > rf.curTerm:38
+2 refuse 5 for log[3]:&{5 39 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 5 for voteFor==6 or voteFor!=5 or args.Term:39 > rf.curTerm:38
+0 voteFor 5 args term:9 index:2  my term:9 index:2
+6 refuse 5 for log[3]:&{5 39 9 2}    {{10 0 <nil>} 3 true 4 1}
+4'vote get 1 tikets of term:25 old:0 response:1
+5'vote get 2 tikets of term:39 old:3 response:5
+0 make a vote of 40
+6 refuse 0 for log[3]:&{0 40 9 2}    {{10 0 <nil>} 3 true 4 1}
+5 voteFor 0 args term:9 index:2  my term:9 index:2
+1 refuse 0 for log[3]:&{0 40 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 1 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:40 > rf.curTerm:38
+2 refuse 0 for log[3]:&{0 40 9 2}    {{10 0 <nil>} 3 true 1 1}
+switch 2 refuse 0 for voteFor==6 or voteFor!=0 or args.Term:40 > rf.curTerm:38
+1 make a vote of 39
+6 voteFor 1 args term:10 index:3  my term:10 index:3
+2 voteFor 1 args term:10 index:3  my term:10 index:3
+6'vote get 3 tikets of term:38 old:0 response:5
+Get state raft 0 is 1 of 40 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 1 is 1 of 39 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 2 is 0 of 39 the leader=-1 logLen:4 term:10 commited:3 apply:3
+Get state raft 5 is 0 of 40 the leader=-1 logLen:3 term:9 commited:1 apply:1
+Get state raft 6 is 0 of 39 the leader=-1 logLen:4 term:10 commited:3 apply:3
+raft 0 was killed
+raft 1 was killed
+raft 2 was killed
+raft 3 was killed
+raft 4 was killed
+raft 5 was killed
+raft 6 was killed
+--- FAIL: TestManyElections2A (6.71s)
+    config.go:454: expected one leader, got none
+FAIL
+exit status 1
+FAIL	6.5840/raft	14.320s

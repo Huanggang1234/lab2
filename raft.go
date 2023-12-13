@@ -26,8 +26,6 @@ import "time"
 import "fmt"
 //import "bytes"
 
-// import "bytes"
-// import "../labgob"
 
 
 
@@ -293,9 +291,12 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply){
      defer rf.mu.Unlock()  
 
      if args.Term < rf.curTerm  {
-	      return
+         return
      }
-
+     if args.Term > rf.maxTerm {
+         rf.maxTerm=args.Term     
+     }
+  //   rf.curTerm=args.Term
      ok:=true
      index:=rf.logLen-1
      if args.LastLogTerm < rf.logs[index].Log.Term || ((args.LastLogTerm==rf.logs[index].Log.Term&&
@@ -328,12 +329,12 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply){
 
 	     case candidate:
 
-		  if rf.voting {
-		      if args.Term > rf.maxTerm {
-			 rf.maxTerm = args.Term
-		      }
-		      return
-		  }
+//		  if rf.voting {
+//		      if args.Term > rf.maxTerm {
+//			 rf.maxTerm = args.Term
+//		      }
+//		      return
+//		  }
 		
 		  if (rf.voteFor==-1 || rf.voteFor==args.Id || args.Term >rf.curTerm)&&ok {
 			  rf.curTerm=args.Term
@@ -407,6 +408,9 @@ func(rf *Raft) AppendEntries(args *AppendEntriesArgs,reply *AppendEntriesReply){
      reply.Repeat=false
      if args.CurTerm < rf.curTerm {
 	return
+     }
+     if args.CurTerm > rf.maxTerm {
+        rf.maxTerm=args.CurTerm
      }
 
      reply.CurTerm=args.CurTerm
@@ -565,7 +569,12 @@ func(rf *Raft) countThread(){
 }
 
 func(rf *Raft) playCandidate(){
-      rf.addTerm=1 
+      rf.addTerm=1
+      
+      if rf.maxTerm > rf.curTerm {
+         rf.curTerm=rf.maxTerm
+      }
+
       for rf.status==candidate {
 	  rf.curTerm=rf.curTerm+rf.addTerm
 	  term:=rf.curTerm
