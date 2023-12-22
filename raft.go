@@ -25,7 +25,7 @@ import "math/rand"
 import "time"
 import "fmt"
 import "bytes"
-
+//import "runtime"
 
 
 
@@ -346,6 +346,9 @@ func(rf *Raft) AppendEntries(args *AppendEntriesArgs,reply *AppendEntriesReply){
      reply.Success=false
      reply.Xlen=rf.logLen
      if args.CurTerm < rf.curTerm {
+	fmt.Printf("%d refuse %d app args:%d %d my:%d\n",rf.me,args.LeaderId,args.CurTerm,args.NextLogIndex,rf.curTerm)
+        reply.Xterm=-1
+	reply.Xindex=-1
 	return
      }
 
@@ -373,7 +376,7 @@ func(rf *Raft) AppendEntries(args *AppendEntriesArgs,reply *AppendEntriesReply){
 
      if args.NextLogIndex>rf.logLen {
  
-	fmt.Printf("%d refuse %d app for args.NextLogIndex:%d > rf.logLen:%d\n",rf.me,args.LeaderId,args.NextLogIndex,rf.logLen)
+	 fmt.Printf("%d refuse %d app for args.NextLogIndex:%d > rf.logLen:%d Sindex:%d term:%d\n",rf.me,args.LeaderId,args.NextLogIndex,rf.logLen,rf.logs[rf.logLen-1].Sindex,rf.logs[rf.logLen-1].Log.Term)
 	reply.Success=false
 	reply.Xterm=rf.logs[rf.logLen-1].Log.Term
 	reply.Xindex=rf.logs[rf.logLen-1].Sindex
@@ -385,8 +388,8 @@ func(rf *Raft) AppendEntries(args *AppendEntriesArgs,reply *AppendEntriesReply){
      term:=args.LastLogTerm
      
      if rf.logs[next-1].ArrayIndex!=index||rf.logs[next-1].Log.Term!=term{
-	 fmt.Printf("%d refuse %d (%d) app for arrayIndex:%d != Lastindex:%d or myTerm:%d != term:%d\n",rf.me,args.LeaderId,preStatus,rf.logs[next-1].ArrayIndex,index,
-	   rf.logs[next-1].Log.Term,term)
+	 fmt.Printf("%d refuse %d (%d) app for arrayIndex:%d != Lastindex:%d or myTerm:%d != term:%d Sindex:%d len:%d\n",rf.me,args.LeaderId,preStatus,rf.logs[next-1].ArrayIndex,index,
+	   rf.logs[next-1].Log.Term,term,rf.logs[next-1].Sindex,rf.logLen)
 	 reply.Success=false
          reply.Xterm=rf.logs[next-1].Log.Term
          reply.Xindex=rf.logs[next-1].Sindex
@@ -640,7 +643,7 @@ func(rf *Raft) leaderExecu(wh int){
                             continue
 			 }
 			 rf.matchIndex[wh]=index+i
-			 rf.logs[index+i].Count++	
+			 rf.logs[index+i].Count++
 			 if (rf.logs[index+i].Count-rf.mainPeers==1)&&(index+i)>=rf.leaIndex {
 			   rf.commited=index+i
 			   fmt.Printf("%d commited index: %d count:%d\n",rf.me,index+i,rf.logs[index+i].Count)
@@ -649,9 +652,9 @@ func(rf *Raft) leaderExecu(wh int){
 		     if rf.commited > preCommited {
 			rf.ccond.Broadcast()
 		     }
-	         }
-		 rf.nextIndex[wh]=rf.matchIndex[wh]+1
-                
+	        }
+                rf.nextIndex[wh]=rf.matchIndex[wh]+1
+
 	    }else if reply.CurTerm > rf.curTerm {
 		rf.curTerm=reply.CurTerm
 		rf.status=follower
@@ -660,7 +663,7 @@ func(rf *Raft) leaderExecu(wh int){
 		rf.persist()
 		rf.mu.Unlock()
 		return
-	    }else{
+	    }else if reply.CurTerm == rf.curTerm && reply.Xindex!=-1 { 
 		fmt.Printf("%d-%d reply%d %d %d index:%d\n",rf.me,wh,reply.Xterm,reply.Xindex,reply.Xlen,index)
                 if reply.Xlen < index {
 		   fmt.Printf("%d-%d reply.Xlen:%d < index:%d\n",rf.me,wh,reply.Xlen,index)
