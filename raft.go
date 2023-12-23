@@ -654,6 +654,7 @@ func(rf *Raft) leaderExecu(wh int){
 		     }
 	        }
                 rf.nextIndex[wh]=rf.matchIndex[wh]+1
+		fmt.Printf("%d-%d nextIndex:%d\n",rf.me,wh,rf.nextIndex[wh])
 
 	    }else if reply.CurTerm > rf.curTerm {
 		rf.curTerm=reply.CurTerm
@@ -952,8 +953,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
      rf.curTerm=0
      rf.status=follower
      rf.mainPeers=len(peers)/2
-    rf.timeBeat=100
-    rf.timeBase=300
+    rf.timeBeat=80
+    rf.timeBase=220
 
     /******************2B******************/
     rf.lastApplied=0
