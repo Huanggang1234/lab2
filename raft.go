@@ -561,6 +561,7 @@ func(rf *Raft) playCandidate(){
 	              continue
 		   }
 		   rf.nextIndex[i]=pre
+		   rf.matchIndex[i]=rf.commited
 	       }
 	       rf.mu.Unlock()
 	       return
@@ -954,7 +955,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
      rf.status=follower
      rf.mainPeers=len(peers)/2
     rf.timeBeat=80
-    rf.timeBase=220
+    rf.timeBase=400
 
     /******************2B******************/
     rf.lastApplied=0
