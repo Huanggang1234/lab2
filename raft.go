@@ -954,8 +954,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
      rf.curTerm=0
      rf.status=follower
      rf.mainPeers=len(peers)/2
-    rf.timeBeat=80
-    rf.timeBase=400
+    rf.timeBeat=50
+    rf.timeBase=450
 
     /******************2B******************/
     rf.lastApplied=0
